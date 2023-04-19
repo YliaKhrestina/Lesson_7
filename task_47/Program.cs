@@ -24,7 +24,7 @@ for (int i = 0; i < m; i++)
 {
     for (int j = 0; j < n; j++)
     {
-        System.Console.Write(Math.Pow((array[i,j]),1) + " ");
+        System.Console.Write(Math.Round((array[i,j]),1) + " ");
     }
     System.Console.WriteLine();
 }

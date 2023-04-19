@@ -23,7 +23,7 @@ int col = int.Parse(System.Console.ReadLine());
 
 if (row >= 0 && row<array.GetLength(0) && col >= 0 && col < array.GetLength(1))
 {
-   System.Console.WriteLine("Значение элемента: " + (Math.Pow((array[row, col]),2)));
+   System.Console.WriteLine("Значение элемента: " + Math.Round((array[row, col]),1));
 }
 else
 {

@@ -17,18 +17,18 @@ int [,] array = new int[,]
 int row = array.GetLength(0);
 int col = array.GetLength(1);
 
-double[] columnAverages = new double [cols];
-for (int j = 0; j < cols; j++)
+double[] columnAverages = new double [col];
+for (int j = 0; j < col; j++)
 {
     double sum = 0;
-    for (int i = 0; i < rows; i++)
+    for (int i = 0; i < row; i++)
     {
         sum += array[i,j];
     }
-    columnAverages[j] = sum/rows;
+    columnAverages[j] = sum/row;
 }
 
-for (int j = 0; j < cols; j++)
+for (int j = 0; j < col; j++)
 {
     System.Console.WriteLine($"Среднее арифметическое элементов каждом столбце {j+1}: {columnAverages[j]}");
 }
